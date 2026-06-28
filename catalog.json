@@ -1,0 +1,92 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/catalog.schema.json",
+  "name": "Keppet Open Data",
+  "description": "Free, daily, USD-anchored open data for the world's currencies, metals, crypto, rates and yields. Static JSON on a CDN — no key, no server.",
+  "updated": "2026-06-28T19:54:31.864Z",
+  "anchor": "USD",
+  "conversion": "value_of_X_in_Y = usd_value(X) / usd_value(Y); fiat usd_value=1/rate, price-domains usd_value=price",
+  "cdn": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main",
+  "datasets": [
+    {
+      "id": "fx",
+      "title": "Foreign Exchange Rates",
+      "unit": "per_usd",
+      "cadence": "daily",
+      "latest": "fx/v1/usd.min.json",
+      "schema": "schema/fx.schema.json",
+      "count": 158,
+      "date": "2026-06-26",
+      "dateBasis": "effective",
+      "sources": [
+        "un",
+        "bis",
+        "ecb",
+        "swissquote"
+      ]
+    },
+    {
+      "id": "metals",
+      "title": "Precious Metals",
+      "unit": "usd_per_oz",
+      "cadence": "daily",
+      "latest": "metals/v1/latest.min.json",
+      "schema": "schema/metals.schema.json",
+      "count": 4,
+      "date": "2026-06-26",
+      "dateBasis": "effective",
+      "sources": [
+        "swissquote"
+      ]
+    },
+    {
+      "id": "crypto",
+      "title": "Cryptocurrencies",
+      "unit": "usd",
+      "cadence": "daily",
+      "latest": "crypto/v1/latest.min.json",
+      "schema": "schema/crypto.schema.json",
+      "count": 96,
+      "date": "2026-06-28",
+      "dateBasis": "snapshot",
+      "sources": [
+        "coingecko"
+      ]
+    },
+    {
+      "id": "rates",
+      "title": "Reference & Policy Rates",
+      "unit": "percent",
+      "cadence": "daily",
+      "latest": "rates/v1/latest.min.json",
+      "schema": "schema/rates.schema.json",
+      "count": 40,
+      "date": "2026-06-25",
+      "dateBasis": "effective",
+      "sources": [
+        "nyfed",
+        "ecb",
+        "bis"
+      ]
+    },
+    {
+      "id": "yields",
+      "title": "Sovereign Yield Curves",
+      "unit": "percent",
+      "cadence": "daily",
+      "latest": "yields/v1/latest.min.json",
+      "schema": "schema/yields.schema.json",
+      "count": 14,
+      "date": "2026-06-26",
+      "dateBasis": "effective",
+      "sources": [
+        "us-treasury"
+      ]
+    }
+  ],
+  "archive": {
+    "observations": "archive/observations/year=*/month=*/<date>.ndjson",
+    "raw": "archive/raw/year=*/month=*/<date>/",
+    "rollup": "archive/rollup + GitHub Release assets per year",
+    "schema": "schema/observations.schema.json"
+  }
+}
