@@ -15,6 +15,13 @@ path, unit, cadence, count and sources.
 https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/catalog.json
 ```
 
+For LLM agents there is also an [`llms.txt`](https://llmstxt.org) — the same catalog
+as prose an agent ingests in one read, including the USD-anchor rule:
+
+```
+https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/llms.txt
+```
+
 ```json
 {
   "name": "Keppet Open Data",
@@ -150,6 +157,28 @@ The general FX re-anchor (currency X in base B) is the same rule:
 `rate of X in B = rates[B] / rates[X]`. Metals are also folded into FX as
 currencies (`rates[XAU] = 1 / usd_price`), so gold-in-yen falls straight out of
 `rates[B] / rates[X]` with no special case.
+
+## Agents & MCP
+
+The data is agent-ready with zero integration: any LLM with a fetch tool can read
+`llms.txt` (or `catalog.json`) and consume every feed directly — the files are
+self-describing, including the USD-anchor formula.
+
+For a typed interface, the **`keppet-mcp`** server wraps the feeds as Model Context
+Protocol tools (`list_datasets`, `convert`, `get_fx`, `get_metals`, `get_crypto`,
+`get_rates`, `get_yield_curve`). It is zero-dependency and keyless — a thin wrapper over
+this CDN — and `convert` does the cross-domain USD-anchor math for you:
+
+```json
+{
+  "mcpServers": {
+    "keppet": { "command": "npx", "args": ["-y", "keppet-mcp"] }
+  }
+}
+```
+
+Then an agent can ask `convert(from: "BTC", to: "JPY")` or `convert(from: "XAU", to: "EUR")`
+and get a number back. See [`mcp/README.md`](mcp/README.md).
 
 ## Sources
 
