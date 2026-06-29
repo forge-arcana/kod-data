@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T15:35:57.535Z",
+  "updated": "2026-06-29T19:48:34.413Z",
   "today": "2026-06-29",
   "domains": [
     {
@@ -99,15 +99,15 @@
     },
     {
       "id": "yields",
-      "date": "2026-06-26",
-      "ageDays": 3,
+      "date": "2026-06-29",
+      "ageDays": 0,
       "fresh": true,
       "sources": [
         {
           "id": "us-treasury",
           "role": "primary",
-          "lastDate": "2026-06-26",
-          "ageDays": 3,
+          "lastDate": "2026-06-29",
+          "ageDays": 0,
           "fresh": true
         }
       ]
