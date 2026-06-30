@@ -213,18 +213,16 @@ scope for a daily reference API.
 
 ## History & archive
 
-Git history is both the time-series archive and the last-good fallback — every
-commit is a timestamped snapshot, and `git log` of any path is that dataset's full
-revision history. The same observations are published at three temperatures:
+The public CDN serves the **hot tier**: current values plus a rolling **90-day**
+window of dated JSON snapshots (`<domain>/v1/<date>.min.json`) per domain. Git history
+of any path is that window's revision history and the last-good fallback.
 
-- **HOT** — dated JSON snapshots (`<domain>/v1/<date>.min.json`) on the CDN, a rolling
-  90-day window.
-- **WARM** — tidy long-form observations, one JSON object per line, partitioned by
-  effective date and de-duplicated, for in-place DuckDB/Polars queries:
-  `archive/observations/year=2026/month=06/<date>.ndjson`. FX, metals, crypto,
-  rates and yields all stack into one queryable table.
-- **COLD** — an annual roll-up, gzipped NDJSON + Parquet, published as **GitHub
-  Release assets** (one tag per year) so the served tree stays lean.
+The **deep history** — the full USD-anchored, tidy long-form observation time series
+(one JSON object per row, partitioned by effective date and de-duplicated; FX, metals,
+crypto, rates and yields stacked into one queryable table, with annual NDJSON.gz +
+Parquet roll-ups) — is maintained privately and offered separately. It is **not**
+served on this public CDN. The format is documented by `schema/observations.schema.json`
+for consumers who receive it.
 
 ## License
 
