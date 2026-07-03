@@ -3,7 +3,7 @@
 > Free, daily, USD-anchored open data for the world's currencies, metals, crypto, rates and yields. Static JSON on a CDN — no key, no server. Every value is anchored to USD, so any cross-rate is a single division — no extra calls, no API key, no rate limits.
 
 Base URL: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main
-Updated: 2026-07-03T08:53:47.519Z. Anchor: USD.
+Updated: 2026-07-03T13:49:21.050Z. Anchor: USD.
 Conversion: value_of_X_in_Y = usd_value(X) / usd_value(Y); fiat usd_value=1/rate, price-domains usd_value=price
 
 ## Datasets
