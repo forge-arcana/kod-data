@@ -3,20 +3,20 @@
   "dataset": "metals",
   "base": "USD",
   "unit": "troy_ounce",
-  "date": "2026-07-02",
-  "updated": "2026-07-02T19:15:03.105Z",
+  "date": "2026-07-03",
+  "updated": "2026-07-03T02:21:35.713Z",
   "sources": [
     "swissquote"
   ],
   "sourcesMeta": {
     "swissquote": {
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     }
   },
   "prices": {
-    "XAU": 4114.6,
-    "XAG": 60.556,
-    "XPT": 1620.43,
-    "XPD": 1261.97
+    "XAU": 4178.405,
+    "XAG": 62.255,
+    "XPT": 1658.5,
+    "XPD": 1284.25
   }
 }
