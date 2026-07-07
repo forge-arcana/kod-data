@@ -3,12 +3,12 @@
 > Free, daily, USD-anchored open data for the world's currencies, metals, crypto, rates and yields. Static JSON on a CDN — no key, no server. Every value is anchored to USD, so any cross-rate is a single division — no extra calls, no API key, no rate limits.
 
 Base URL: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main
-Updated: 2026-07-07T09:30:20.045Z. Anchor: USD.
+Updated: 2026-07-07T14:14:58.753Z. Anchor: USD.
 Conversion: value_of_X_in_Y = usd_value(X) / usd_value(Y); fiat usd_value=1/rate, price-domains usd_value=price
 
 ## Datasets
 
-- [Foreign Exchange Rates](https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/fx/v1/usd.min.json): 158 instruments, daily, in units of the currency per 1 USD. Latest 2026-07-06 (the day the values were actually true; may lag today on weekends/holidays). Sources: un, bis, ecb, swissquote. Schema: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/fx.schema.json
+- [Foreign Exchange Rates](https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/fx/v1/usd.min.json): 158 instruments, daily, in units of the currency per 1 USD. Latest 2026-07-07 (the day the values were actually true; may lag today on weekends/holidays). Sources: un, bis, ecb, swissquote. Schema: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/fx.schema.json
 - [Precious Metals](https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/metals/v1/latest.min.json): 4 instruments, daily, in USD per troy ounce. Latest 2026-07-07 (the day the values were actually true; may lag today on weekends/holidays). Sources: swissquote. Schema: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/metals.schema.json
 - [Cryptocurrencies](https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/crypto/v1/latest.min.json): 96 instruments, daily, in USD. Latest 2026-07-07 (a real-time capture stamped with today). Sources: coingecko. Schema: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/crypto.schema.json
 - [Reference & Policy Rates](https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/rates/v1/latest.min.json): 40 instruments, daily, in percent per annum. Latest 2026-07-06 (the day the values were actually true; may lag today on weekends/holidays). Sources: nyfed, ecb, bis. Schema: https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/rates.schema.json
