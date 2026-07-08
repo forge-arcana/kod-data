@@ -1,38 +1,38 @@
 {
-  "updated": "2026-07-07T19:46:16.147Z",
-  "today": "2026-07-07",
+  "updated": "2026-07-08T02:03:39.149Z",
+  "today": "2026-07-08",
   "domains": [
     {
       "id": "fx",
       "date": "2026-07-07",
-      "ageDays": 0,
+      "ageDays": 1,
       "fresh": true,
       "sources": [
         {
           "id": "un",
           "role": "primary",
           "lastDate": "2026-06-30",
-          "ageDays": 7,
+          "ageDays": 8,
           "fresh": true
         },
         {
           "id": "bis",
           "role": "secondary",
           "lastDate": "2026-06-30",
-          "ageDays": 7,
+          "ageDays": 8,
           "fresh": false
         },
         {
           "id": "ecb",
           "role": "tertiary",
           "lastDate": "2026-07-07",
-          "ageDays": 0,
+          "ageDays": 1,
           "fresh": true
         },
         {
           "id": "swissquote",
           "role": "derived",
-          "lastDate": "2026-07-07",
+          "lastDate": "2026-07-08",
           "ageDays": 0,
           "fresh": true
         }
@@ -40,14 +40,14 @@
     },
     {
       "id": "metals",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "ageDays": 0,
       "fresh": true,
       "sources": [
         {
           "id": "swissquote",
           "role": "primary",
-          "lastDate": "2026-07-07",
+          "lastDate": "2026-07-08",
           "ageDays": 0,
           "fresh": true
         }
@@ -55,14 +55,14 @@
     },
     {
       "id": "crypto",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "ageDays": 0,
       "fresh": true,
       "sources": [
         {
           "id": "coingecko",
           "role": "primary",
-          "lastDate": "2026-07-07",
+          "lastDate": "2026-07-08",
           "ageDays": 0,
           "fresh": true
         }
@@ -71,28 +71,28 @@
     {
       "id": "rates",
       "date": "2026-07-06",
-      "ageDays": 1,
+      "ageDays": 2,
       "fresh": true,
       "sources": [
         {
           "id": "nyfed",
           "role": "primary",
           "lastDate": "2026-07-06",
-          "ageDays": 1,
+          "ageDays": 2,
           "fresh": true
         },
         {
           "id": "ecb",
           "role": "secondary",
           "lastDate": "2026-07-06",
-          "ageDays": 1,
+          "ageDays": 2,
           "fresh": true
         },
         {
           "id": "bis",
           "role": "tertiary",
           "lastDate": "2026-06-30",
-          "ageDays": 7,
+          "ageDays": 8,
           "fresh": false
         }
       ]
@@ -100,14 +100,14 @@
     {
       "id": "yields",
       "date": "2026-07-07",
-      "ageDays": 0,
+      "ageDays": 1,
       "fresh": true,
       "sources": [
         {
           "id": "us-treasury",
           "role": "primary",
           "lastDate": "2026-07-07",
-          "ageDays": 0,
+          "ageDays": 1,
           "fresh": true
         }
       ]
