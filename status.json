@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T02:03:39.149Z",
+  "updated": "2026-07-08T08:14:29.085Z",
   "today": "2026-07-08",
   "domains": [
     {
@@ -70,8 +70,8 @@
     },
     {
       "id": "rates",
-      "date": "2026-07-06",
-      "ageDays": 2,
+      "date": "2026-07-07",
+      "ageDays": 1,
       "fresh": true,
       "sources": [
         {
@@ -84,8 +84,8 @@
         {
           "id": "ecb",
           "role": "secondary",
-          "lastDate": "2026-07-06",
-          "ageDays": 2,
+          "lastDate": "2026-07-07",
+          "ageDays": 1,
           "fresh": true
         },
         {

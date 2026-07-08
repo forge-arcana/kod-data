@@ -1,8 +1,8 @@
 {
   "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/rates.schema.json",
   "dataset": "rates",
-  "date": "2026-07-06",
-  "updated": "2026-07-08T02:03:28.780Z",
+  "date": "2026-07-07",
+  "updated": "2026-07-08T08:14:19.885Z",
   "sources": [
     "nyfed",
     "ecb",
@@ -13,7 +13,7 @@
       "date": "2026-07-06"
     },
     "ecb": {
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     "bis": {
       "date": "2026-06-30"
@@ -27,7 +27,7 @@
     },
     "ESTR": {
       "percent": 2.182,
-      "date": "2026-07-06",
+      "date": "2026-07-07",
       "source": "ecb"
     }
   },
