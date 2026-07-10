@@ -2,7 +2,7 @@
   "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/rates.schema.json",
   "dataset": "rates",
   "date": "2026-07-08",
-  "updated": "2026-07-09T19:27:46.388Z",
+  "updated": "2026-07-10T02:22:53.738Z",
   "sources": [
     "nyfed",
     "ecb",
