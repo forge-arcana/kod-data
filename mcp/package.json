@@ -23,5 +23,14 @@
   "engines": {
     "node": ">=18"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forge-arcana/kod-data.git",
+    "directory": "mcp"
+  },
+  "homepage": "https://github.com/forge-arcana/kod-data/tree/main/mcp#readme",
+  "bugs": {
+    "url": "https://github.com/forge-arcana/kod-data/issues"
+  },
   "license": "MIT"
 }
