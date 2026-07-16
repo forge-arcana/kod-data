@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T01:59:35.774Z",
+  "updated": "2026-07-16T08:01:17.715Z",
   "today": "2026-07-16",
   "domains": [
     {
@@ -18,9 +18,9 @@
         {
           "id": "bis",
           "role": "secondary",
-          "lastDate": "2026-07-07",
-          "ageDays": 9,
-          "fresh": false
+          "lastDate": "2026-07-14",
+          "ageDays": 2,
+          "fresh": true
         },
         {
           "id": "ecb",
@@ -70,8 +70,8 @@
     },
     {
       "id": "rates",
-      "date": "2026-07-14",
-      "ageDays": 2,
+      "date": "2026-07-15",
+      "ageDays": 1,
       "fresh": true,
       "sources": [
         {
@@ -84,16 +84,16 @@
         {
           "id": "ecb",
           "role": "secondary",
-          "lastDate": "2026-07-14",
-          "ageDays": 2,
+          "lastDate": "2026-07-15",
+          "ageDays": 1,
           "fresh": true
         },
         {
           "id": "bis",
           "role": "tertiary",
-          "lastDate": "2026-07-07",
-          "ageDays": 9,
-          "fresh": false
+          "lastDate": "2026-07-14",
+          "ageDays": 2,
+          "fresh": true
         }
       ]
     },
