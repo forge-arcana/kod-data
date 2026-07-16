@@ -2,7 +2,7 @@
   "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/rates.schema.json",
   "dataset": "rates",
   "date": "2026-07-15",
-  "updated": "2026-07-16T08:01:08.470Z",
+  "updated": "2026-07-16T13:28:03.621Z",
   "sources": [
     "nyfed",
     "ecb",
@@ -10,7 +10,7 @@
   ],
   "sourcesMeta": {
     "nyfed": {
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     "ecb": {
       "date": "2026-07-15"
@@ -21,8 +21,8 @@
   },
   "reference": {
     "SOFR": {
-      "percent": 3.63,
-      "date": "2026-07-14",
+      "percent": 3.64,
+      "date": "2026-07-15",
       "source": "nyfed"
     },
     "ESTR": {

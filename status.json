@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T08:01:17.715Z",
+  "updated": "2026-07-16T13:28:14.046Z",
   "today": "2026-07-16",
   "domains": [
     {
@@ -77,8 +77,8 @@
         {
           "id": "nyfed",
           "role": "primary",
-          "lastDate": "2026-07-14",
-          "ageDays": 2,
+          "lastDate": "2026-07-15",
+          "ageDays": 1,
           "fresh": true
         },
         {
