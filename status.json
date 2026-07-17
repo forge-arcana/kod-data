@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-17T13:13:43.757Z",
+  "updated": "2026-07-17T18:58:23.471Z",
   "today": "2026-07-17",
   "domains": [
     {
       "id": "fx",
-      "date": "2026-07-16",
-      "ageDays": 1,
+      "date": "2026-07-17",
+      "ageDays": 0,
       "fresh": true,
       "sources": [
         {
@@ -25,8 +25,8 @@
         {
           "id": "ecb",
           "role": "tertiary",
-          "lastDate": "2026-07-16",
-          "ageDays": 1,
+          "lastDate": "2026-07-17",
+          "ageDays": 0,
           "fresh": true
         },
         {

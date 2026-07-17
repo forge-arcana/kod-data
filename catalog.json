@@ -2,7 +2,7 @@
   "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/catalog.schema.json",
   "name": "Keppet Open Data",
   "description": "Free, daily, USD-anchored open data for the world's currencies, metals, crypto, rates and yields. Static JSON on a CDN — no key, no server.",
-  "updated": "2026-07-17T13:13:43.757Z",
+  "updated": "2026-07-17T18:58:23.471Z",
   "anchor": "USD",
   "conversion": "value_of_X_in_Y = usd_value(X) / usd_value(Y); fiat usd_value=1/rate, price-domains usd_value=price",
   "cdn": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main",
@@ -15,7 +15,7 @@
       "latest": "fx/v1/usd.min.json",
       "schema": "schema/fx.schema.json",
       "count": 158,
-      "date": "2026-07-16",
+      "date": "2026-07-17",
       "dateBasis": "effective",
       "sources": [
         "un",
