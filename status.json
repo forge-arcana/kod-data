@@ -1,0 +1,116 @@
+{
+  "updated": "2026-07-24T02:03:33.820Z",
+  "today": "2026-07-24",
+  "domains": [
+    {
+      "id": "fx",
+      "date": "2026-07-23",
+      "ageDays": 1,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "un",
+          "role": "primary",
+          "lastDate": "2026-07-15",
+          "ageDays": 9,
+          "fresh": true
+        },
+        {
+          "id": "bis",
+          "role": "secondary",
+          "lastDate": "2026-07-21",
+          "ageDays": 3,
+          "fresh": true
+        },
+        {
+          "id": "ecb",
+          "role": "tertiary",
+          "lastDate": "2026-07-23",
+          "ageDays": 1,
+          "fresh": true
+        },
+        {
+          "id": "swissquote",
+          "role": "derived",
+          "lastDate": "2026-07-24",
+          "ageDays": 0,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "metals",
+      "date": "2026-07-24",
+      "ageDays": 0,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "swissquote",
+          "role": "primary",
+          "lastDate": "2026-07-24",
+          "ageDays": 0,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "date": "2026-07-24",
+      "ageDays": 0,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "coingecko",
+          "role": "primary",
+          "lastDate": "2026-07-24",
+          "ageDays": 0,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "date": "2026-07-22",
+      "ageDays": 2,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "nyfed",
+          "role": "primary",
+          "lastDate": "2026-07-22",
+          "ageDays": 2,
+          "fresh": true
+        },
+        {
+          "id": "ecb",
+          "role": "secondary",
+          "lastDate": "2026-07-22",
+          "ageDays": 2,
+          "fresh": true
+        },
+        {
+          "id": "bis",
+          "role": "tertiary",
+          "lastDate": "2026-07-21",
+          "ageDays": 3,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "yields",
+      "date": "2026-07-23",
+      "ageDays": 1,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "us-treasury",
+          "role": "primary",
+          "lastDate": "2026-07-23",
+          "ageDays": 1,
+          "fresh": true
+        }
+      ]
+    }
+  ]
+}
