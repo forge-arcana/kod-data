@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/catalog.schema.json",
+  "title": "Keppet Catalog",
+  "description": "Top-level index of every published dataset and the archive layout.",
+  "type": "object",
+  "required": ["name", "description", "updated", "anchor", "conversion", "cdn", "datasets", "archive"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "updated": { "type": "string", "format": "date-time" },
+    "anchor": { "const": "USD" },
+    "conversion": {
+      "description": "Human-readable note on the USD-anchored conversion formula.",
+      "type": "string"
+    },
+    "cdn": { "type": "string", "format": "uri" },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "unit", "cadence", "latest", "schema", "count", "date", "dateBasis", "sources"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "unit": { "type": "string" },
+          "cadence": { "type": "string" },
+          "latest": { "type": "string" },
+          "schema": { "type": "string", "format": "uri-reference" },
+          "count": { "type": "integer", "minimum": 0 },
+          "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "dateBasis": { "type": "string", "enum": ["effective", "snapshot", "build"] },
+          "sources": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "archive": {
+      "description": "The time-series archive tiers (warm observations, raw landing zone, cold roll-up).",
+      "type": "object",
+      "required": ["observations", "schema"],
+      "properties": {
+        "observations": { "type": "string" },
+        "raw": { "type": "string" },
+        "rollup": { "type": "string" },
+        "schema": { "type": "string" }
+      }
+    }
+  }
+}
