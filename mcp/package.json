@@ -1,0 +1,36 @@
+{
+  "name": "keppet-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for Keppet Open Data — USD-anchored FX, metals, crypto, rates and sovereign yields. Zero dependencies, no API key.",
+  "bin": {
+    "keppet-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "open-data",
+    "fx",
+    "exchange-rates",
+    "crypto",
+    "metals",
+    "yields"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forge-arcana/kod-data.git",
+    "directory": "mcp"
+  },
+  "homepage": "https://github.com/forge-arcana/kod-data/tree/main/mcp#readme",
+  "bugs": {
+    "url": "https://github.com/forge-arcana/kod-data/issues"
+  },
+  "license": "MIT"
+}
