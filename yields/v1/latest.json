@@ -1,0 +1,36 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/yields.schema.json",
+  "dataset": "yields",
+  "base": "USD",
+  "date": "2026-09-11",
+  "updated": "2026-09-12T16:12:51.221Z",
+  "sources": [
+    "us-treasury"
+  ],
+  "sourcesMeta": {
+    "us-treasury": {
+      "date": "2026-09-11"
+    }
+  },
+  "curves": {
+    "US": {
+      "unit": "percent",
+      "tenors": {
+        "1M": 3.93,
+        "1.5M": 3.99,
+        "2M": 4.05,
+        "3M": 4.07,
+        "4M": 4.15,
+        "6M": 4.12,
+        "1Y": 4.35,
+        "2Y": 4.63,
+        "3Y": 4.69,
+        "5Y": 4.78,
+        "7Y": 4.87,
+        "10Y": 4.96,
+        "20Y": 5.38,
+        "30Y": 5.35
+      }
+    }
+  }
+}
