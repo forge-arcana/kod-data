@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/metals.schema.json",
+  "title": "Keppet Metals",
+  "description": "Spot precious-metal prices in USD per troy ounce.",
+  "type": "object",
+  "required": ["dataset", "base", "unit", "date", "updated", "sources", "sourcesMeta", "prices"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "dataset": { "const": "metals" },
+    "base": { "const": "USD" },
+    "unit": { "const": "troy_ounce" },
+    "date": {
+      "description": "Effective day of the freshest quote (UTC), not build time.",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated": { "type": "string", "format": "date-time" },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "sourcesMeta": {
+      "description": "Per-source effective date — drives status.json per-feed freshness.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["date"],
+        "additionalProperties": false,
+        "properties": { "date": { "type": "string", "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$" } }
+      }
+    },
+    "prices": {
+      "description": "Metal code (XAU/XAG/XPT/XPD, XRH...) -> USD per troy ounce. A failed metal is simply absent.",
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^X[A-Z]{2}$" },
+      "patternProperties": {
+        "^X[A-Z]{2}$": { "type": "number", "exclusiveMinimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  }
+}
