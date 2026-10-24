@@ -1,0 +1,138 @@
+{
+  "updated": "2026-10-24T15:24:36.166Z",
+  "today": "2026-10-24",
+  "domains": [
+    {
+      "id": "fx",
+      "date": "2026-10-23",
+      "ageDays": 1,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "un",
+          "role": "primary",
+          "lastDate": "2026-10-15",
+          "ageDays": 9,
+          "fresh": true
+        },
+        {
+          "id": "bis",
+          "role": "secondary",
+          "lastDate": "2026-10-20",
+          "ageDays": 4,
+          "fresh": true
+        },
+        {
+          "id": "ecb",
+          "role": "tertiary",
+          "lastDate": "2026-10-23",
+          "ageDays": 1,
+          "fresh": true
+        },
+        {
+          "id": "swissquote",
+          "role": "derived",
+          "lastDate": "2026-10-23",
+          "ageDays": 1,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "metals",
+      "date": "2026-10-23",
+      "ageDays": 1,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "swissquote",
+          "role": "primary",
+          "lastDate": "2026-10-23",
+          "ageDays": 1,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "date": "2026-10-24",
+      "ageDays": 0,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "coingecko",
+          "role": "primary",
+          "lastDate": "2026-10-24",
+          "ageDays": 0,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "date": "2026-10-22",
+      "ageDays": 2,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "nyfed",
+          "role": "primary",
+          "lastDate": "2026-10-22",
+          "ageDays": 2,
+          "fresh": true
+        },
+        {
+          "id": "ecb",
+          "role": "secondary",
+          "lastDate": "2026-10-22",
+          "ageDays": 2,
+          "fresh": true
+        },
+        {
+          "id": "bis",
+          "role": "tertiary",
+          "lastDate": "2026-10-20",
+          "ageDays": 4,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "yields",
+      "date": "2026-10-23",
+      "ageDays": 1,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "us-treasury",
+          "role": "primary",
+          "lastDate": "2026-10-23",
+          "ageDays": 1,
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "id": "econ",
+      "date": "2026-10-08",
+      "ageDays": 16,
+      "fresh": true,
+      "sources": [
+        {
+          "id": "worldbank-income",
+          "role": "primary",
+          "lastDate": "2026-10-08",
+          "ageDays": 16,
+          "fresh": true
+        },
+        {
+          "id": "worldbank-gni",
+          "role": "primary",
+          "lastDate": "2026-10-08",
+          "ageDays": 16,
+          "fresh": true
+        }
+      ]
+    }
+  ]
+}
