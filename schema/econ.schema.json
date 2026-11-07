@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/econ.schema.json",
+  "title": "Keppet Relative Economic Multiplier",
+  "description": "Per-country affordability / PPP multiplier, USD-anchored to the US = 1.0. Derived from World Bank income-group classification and GNI per capita, PPP. multiplier = clamp(GNI_pc_PPP(country)/GNI_pc_PPP(US), multiplierFloor).",
+  "type": "object",
+  "required": ["dataset", "base", "unit", "date", "updated", "reference", "multiplierFloor", "incomeGroups", "sources", "sourcesMeta", "countries"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "dataset": { "const": "econ" },
+    "base": { "const": "USD" },
+    "unit": { "const": "multiplier" },
+    "date": {
+      "description": "Effective date: the World Bank data vintage's lastupdated stamp (UTC), not build time.",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated": { "type": "string", "format": "date-time" },
+    "reference": {
+      "description": "ISO-3166 alpha-2 of the country the multiplier is relative to (= 1.0).",
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "multiplierFloor": {
+      "description": "Lower clamp applied to every published multiplier; recompute the unclamped ratio from gniPerCapitaPppUsd if needed.",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "incomeGroups": {
+      "description": "Canonical income-group labels, coarse -> rich.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sources": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "sourcesMeta": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["date"],
+        "additionalProperties": false,
+        "properties": { "date": { "type": "string", "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$" } }
+      }
+    },
+    "countries": {
+      "description": "ISO-3166 alpha-2 -> per-country multiplier record.",
+      "type": "object",
+      "propertyNames": { "pattern": "^[A-Z]{2}$" },
+      "patternProperties": {
+        "^[A-Z]{2}$": {
+          "type": "object",
+          "required": ["name", "multiplier", "incomeGroup", "gniPerCapitaPppUsd", "dataYear", "basis"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string" },
+            "multiplier": { "type": "number", "exclusiveMinimum": 0 },
+            "incomeGroup": { "description": "World Bank income group — guaranteed present for every published country (unclassified countries are excluded).", "type": "string" },
+            "gniPerCapitaPppUsd": { "type": ["integer", "null"], "exclusiveMinimum": 0 },
+            "dataYear": { "type": ["integer", "null"] },
+            "basis": { "enum": ["gni_ppp", "income_group"] }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
