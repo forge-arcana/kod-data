@@ -1,0 +1,22 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/gh/forge-arcana/kod-data@main/schema/metals.schema.json",
+  "dataset": "metals",
+  "base": "USD",
+  "unit": "troy_ounce",
+  "date": "2026-11-20",
+  "updated": "2026-11-21T05:41:01.582Z",
+  "sources": [
+    "swissquote"
+  ],
+  "sourcesMeta": {
+    "swissquote": {
+      "date": "2026-11-20"
+    }
+  },
+  "prices": {
+    "XAU": 3534.415,
+    "XAG": 41.2025,
+    "XPT": 1301.15,
+    "XPD": 894.855
+  }
+}
